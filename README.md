@@ -68,7 +68,7 @@ After summarizing firm characteristics, we explored how the sample is distribute
 ## Bar Plot: Number of Formal and Informal Firms by Country
 
 We visualized the number of formal and informal firms in each country using a grouped bar chart.
-(https://github.com/said-tojiboev/formalization_effect/commit/927fabb7ac737f06d767bf1be1222ad94c73338e#diff-6be7311d49ea8f0b07f88a3dfce32e19824a846fe6b815de154f330d2c68ff04)
+![](https://github.com/said-tojiboev/formalization_effect/commit/927fabb7ac737f06d767bf1be1222ad94c73338e#diff-6be7311d49ea8f0b07f88a3dfce32e19824a846fe6b815de154f330d2c68ff04)
 
 ### Key observations
 
@@ -80,7 +80,7 @@ We visualized the number of formal and informal firms in each country using a gr
 ## Geographic Distribution: Choropleth Maps
 
 We also created regional choropleth maps to visualize the distribution of formal and informal firms by country.
-(https://github.com/said-tojiboev/formalization_effect/commit/927fabb7ac737f06d767bf1be1222ad94c73338e#diff-cab46b2bd023c0b8f255f2e20c7c8fdedb5afee51569d3ae671b638bbb3bab02)
+![](https://github.com/said-tojiboev/formalization_effect/commit/927fabb7ac737f06d767bf1be1222ad94c73338e#diff-cab46b2bd023c0b8f255f2e20c7c8fdedb5afee51569d3ae671b638bbb3bab02)
 
 ### Key Observations
 
