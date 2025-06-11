@@ -50,7 +50,7 @@ After preparing the data, we summarize the key variables:
 
 ---
 
-## 🔍 Interpretation
+## Key observations
 
 - **High registration rate** (90%) indicates formalization is the norm among surveyed firms in these countries.
 - **Wide variation in firm age and size**: Ranges from newly established startups to legacy firms over 90 years old.
@@ -61,3 +61,29 @@ These summary statistics confirm data quality and sufficient variation across ke
 
 ---
 
+# Sample Composition and Visualization
+
+After summarizing firm characteristics, we explored how the sample is distributed across countries and by firm registration status (formal vs. informal).
+
+## Bar Plot: Number of Formal and Informal Firms by Country
+
+We visualized the number of formal and informal firms in each country using a grouped bar chart.
+
+### Key observations
+
+- **Kazakhstan** and **Uzbekistan** had the highest number of formal firms (849 and 739, respectively).
+- The number of **informal firms** is much lower across all countries — the smallest being in **Tajikistan** (23 firms).
+- This suggests an **imbalance in registration status**, with formal firms dominating the sample — a known issue in Enterprise Survey data.
+- The imbalance needs to be accounted for when interpreting results, especially in **matching or regression models** that assume comparability across groups.
+
+## Geographic Distribution: Choropleth Maps
+
+We also created regional choropleth maps to visualize the distribution of formal and informal firms by country.
+
+### Key Observations
+
+- **Formal firms** are more concentrated in Kazakhstan and Uzbekistan, indicated by darker green regions.
+- **Informal firms** are fewer and more spread out, with some concentration in **Uzbekistan** and **Turkmenistan**.
+- Countries with fewer informal firms (e.g., **Tajikistan**) may lead to **less precise estimates** when comparing registered vs. unregistered firms.
+
+---
