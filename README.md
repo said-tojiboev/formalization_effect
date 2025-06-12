@@ -2,7 +2,7 @@
 
 ## Research Background
 
-This project replicates and extends the core findings of Assenova & Sorenson (2017), *"Legitimacy and the Benefits of Firm Formalization,"* using firm-level data from the **World Bank Enterprise Surveys** for five Central Asian countries: **Uzbekistan, Kazakhstan, Kyrgyzstan, Tajikistan, and Turkmenistan**.
+This project replicates and extends the core findings of Assenova & Sorenson (2017), *"Legitimacy and the Benefits of Firm Formalization,"* using firm-level data from the **World Bank Enterprise Surveys** for five Central Asian countries: **Uzbekistan, Kazakhstan, Kyrgyzstan, Tajikistan, and Turkmenistan**. The survey data were collected between **2023 and 2024**, offering recent insights into firm behavior in transition economies.
 
 While the original paper examined how firm registration (formalization) influences outcomes such as **employment** and **sales**, this study expands that analysis in two important ways:
 
@@ -57,8 +57,6 @@ After preparing the data, we summarize the key variables:
 - **Low female ownership** (20%) highlights a gender gap in firm leadership—an important motivation for the gender-based interaction analysis later in the study.
 - **Managerial experience** shows substantial heterogeneity, supporting the use of matching and multilevel models to control for human capital factors.
 
-These summary statistics confirm data quality and sufficient variation across key dimensions, enabling robust empirical analysis.
-
 ---
 
 ## Sample Composition and Visualization
@@ -67,7 +65,6 @@ After summarizing firm characteristics, we explored how the sample is distribute
 
 ### Bar Plot: Number of Formal and Informal Firms by Country
 
-We visualized the number of formal and informal firms in each country using a grouped bar chart.
 ![Rplot01](https://github.com/user-attachments/assets/1f2e20f6-4a0e-442b-9800-86362563e4bd)
 
 
@@ -80,9 +77,7 @@ We visualized the number of formal and informal firms in each country using a gr
 
 ### Geographic Distribution: Choropleth Maps
 
-We also created regional choropleth maps to visualize the distribution of formal and informal firms by country.
 ![Screenshot 2025-06-11 164738](https://github.com/user-attachments/assets/1b683489-54c4-4c50-af2e-14cae17de9c1)
-
 
 
 ### Key Observations
@@ -225,17 +220,6 @@ Separate models are estimated for each country, controlling for:
 - **Uzbekistan and Turkmenistan** show smaller, less precise effects.
 
 **Conclusion**: The **effect of registration on sales** is **inconclusive**. There is **no strong evidence** that formalization improves or reduces firm sales in any country in the sample.
-
----
-
-## Summary
-
-| Outcome      | General Trend         | Significant Effect?                 |
-|--------------|------------------------|-------------------------------------|
-| Employment   | Negative in all cases  | Yes, only in **Kazakhstan**         |
-| Sales        | Negative in all cases  | **No** significant effects observed |
-
-These results indicate that the **impact of registration varies by country** and outcome. Effects on employment are more consistently negative, with only Kazakhstan showing significance. For sales, the data suggests negative trends but lacks statistical power for strong conclusions.
 
 ---
 
