@@ -95,7 +95,7 @@ We estimate a **Linear Probability Model (LPM)** to examine which firm character
 > `registered = 1` if the firm was registered at the time of start,  
 > `0` otherwise.
 
-## Covariates Included
+### Covariates Included
 
 - **female_owner**: Dummy for whether the firm is female-owned  
 - **firm_age**: Age of the firm in years  
@@ -104,13 +104,13 @@ We estimate a **Linear Probability Model (LPM)** to examine which firm character
 - **size**: Categorical firm size (with 5 levels)  
 - **country**: Country fixed effects (Uzbekistan as reference)
 
-## Result Visualization
+### Result Visualization
 
 Visual results are presented with confidence intervals (horizontal bars). If the interval crosses the red vertical line at 0, the effect is **not statistically significant** at the 95% level.
 ![Rplot03](https://github.com/user-attachments/assets/1a47b6fe-5bda-4ea5-a22f-2b84f4319821)
 
 
-## Key Observations
+### Key Observations
 
 - **Initial firm size** and **firm age** are positively associated with the likelihood of registration. Larger and older firms are more likely to be formalized.
 - The **coefficient on female ownership** is positive but **statistically insignificant**, suggesting no strong evidence that gender predicts registration in this context.
@@ -121,24 +121,24 @@ Visual results are presented with confidence intervals (horizontal bars). If the
 
 ---
 
-# Effect of Registration by Firm Age
+## Effect of Registration by Firm Age
 
 To explore how the impact of formalization evolves as firms mature, we estimate **separate OLS regressions** for each firm age (1 to 20 years). This approach replicates the logic of **Figure 4 from Assenova & Sorenson (2017)**.
 
-## Controls Included
+### Controls Included
 
 - **Initial firm size** (`init_size`)  
 - **Manager experience**  
 - **Country fixed effects**  
 - **Firm size category**
 
-## Visualization
+### Visualization
 
 The effects of registration on employment and sales are plotted across firm ages with corresponding 95% confidence intervals.
 ![Rplot04](https://github.com/user-attachments/assets/04be9fb6-a131-4652-8b85-99f2addd53dd)
 
 
-## Key Observations
+### Key Observations
 
 - Younger firms (**ages 1–5**) exhibit **high variance** in the estimated effect of registration on both employment and sales.
   - The **wide confidence intervals** reflect small sample sizes and greater heterogeneity among early-stage enterprises.
@@ -153,17 +153,17 @@ The effects of registration on employment and sales are plotted across firm ages
 
 ---
 
-### 8a. Overall Matching Effects (Full Sample)
+## 8a. Overall Matching Effects (Full Sample)
 
 To estimate the **average treatment effect of registration** across all countries in the sample, we use **Genetic Matching (GenMatch)** with the following covariates:
 
-#### Covariates Used for Matching
+### Covariates Used for Matching
 - Matching was done using three key covariates: `firm_age`, `init_size`, and `manager_experience`.
 - `GenMatch` was used to optimize the covariate balance across the treated (registered) and control (informal) firms.
 - Outcome variables: `ln_emp` (log of employment) and `ln_sales` (log of annual sales).
 - The estimated quantity is the **Average Treatment Effect on the Treated (ATT)**.
 
-#### Results
+### Results
 
 | Outcome   | Estimate | Std. Error | T-statistic | P-value | Interpretation |
 |-----------|----------|------------|-------------|---------|----------------|
@@ -174,7 +174,7 @@ These findings align with Assenova & Sorenson (2017), who argue that the benefit
 
 ---
 
-# Effect of Registration by Country (Matching Estimation)
+## Effect of Registration by Country (Matching Estimation)
 
 To assess cross-country differences in the **impact of firm registration**, we use **Genetic Matching** (GenMatch) to estimate the effect of registration on:
 
@@ -186,7 +186,7 @@ Separate models are estimated for each country, controlling for:
 - **Initial firm size (log employees at founding)**
 - **Manager experience**
 
-## Visualization 1: Effect of Registration on Employment by Country
+### Visualization 1: Effect of Registration on Employment by Country
 ![Rplot05](https://github.com/user-attachments/assets/0d8ecc8b-9b73-49a8-a0b2-73512bc7e0ca)
 
 
@@ -205,7 +205,7 @@ Separate models are estimated for each country, controlling for:
 
 ---
 
-## Visualization 2: Effect of Registration on Sales by Country
+### Visualization 2: Effect of Registration on Sales by Country
 ![Rplot06](https://github.com/user-attachments/assets/44f95e27-e77b-442a-abd9-8474b832909c)
 
 
@@ -223,11 +223,11 @@ Separate models are estimated for each country, controlling for:
 
 ---
 
-# OLS Regressions: Effect of Registration on Firm Outcomes
+## OLS Regressions: Effect of Registration on Firm Outcomes
 
 We estimate four OLS models to assess how firm registration at the time of founding affects **log sales** and **log employment**.
 
-## Model Specifications
+### Model Specifications
 
 - **Basic Models (1 & 2)**: Include controls for firm age, founding size, and country fixed effects.
 - **Full Models (3 & 4)**: Add manager experience, female ownership, and firm size category.
@@ -252,7 +252,7 @@ We estimate four OLS models to assess how firm registration at the time of found
 
 ---
 
-## Key Takeaways
+### Key Takeaways
 
 - **Registration at founding** has a **significant negative effect on employment**, but **no significant effect on sales** in both basic and full models.
 - **Firm age** and **initial firm size** are strong positive predictors of both sales and employment.
@@ -262,7 +262,7 @@ We estimate four OLS models to assess how firm registration at the time of found
 
 ---
 
-# Multilevel Models: Effect of Registration with Random Slopes by Country
+## Multilevel Models: Effect of Registration with Random Slopes by Country
 
 In cross-country analyses, assuming the same effect across all countries may overlook real differences in context. That’s why we use random effects, which allow both the baseline outcomes (intercepts) and the impact of registration (slopes) to vary across countries. This approach captures country-level heterogeneity and provides a more flexible and realistic understanding of how registration affects firm outcomes differently in each context.
 
@@ -274,15 +274,15 @@ Each model includes:
 
 ---
 
-## Model 1: Ln Employment (Multilevel)
+### Model 1: Ln Employment (Multilevel)
 
-### Model Summary
+#### Model Summary
 
 - **REML Criterion**: 6884.5  
 - **Number of Observations**: 2599  
 - **Countries (groups)**: 5  
 
-### Random Effects
+#### Random Effects
 
 | Effect       | Variance | Std.Dev. | Correlation |
 |--------------|----------|----------|-------------|
@@ -290,7 +290,7 @@ Each model includes:
 | Registered   | 0.039    | 0.197    | −0.97       |
 | Residual     | 0.809    | 0.900    | –           |
 
-### Fixed Effects
+#### Fixed Effects
 
 | Variable             | Estimate   | Std. Error | Significance |
 |----------------------|------------|------------|---------------|
@@ -304,7 +304,7 @@ Each model includes:
 | Size 4               | −0.220     | 0.049      | ***           |
 | Size 5               | −0.236     | 0.070      | **            |
 
-### Key Takeaways
+#### Key Takeaways
 
 - **Registration** has a **negative and marginally significant effect** on employment.  
 - **Female ownership** continues to show a **significant negative effect**.  
@@ -321,7 +321,7 @@ Each model includes:
 - **Number of Observations**: 2599  
 - **Countries (groups)**: 5  
 
-### Random Effects
+#### Random Effects
 
 | Effect       | Variance | Std.Dev. | Correlation |
 |--------------|----------|----------|-------------|
@@ -329,7 +329,7 @@ Each model includes:
 | Registered   | 0.117    | 0.343    | −0.45       |
 | Residual     | 4.093    | 2.023    | –           |
 
-### Fixed Effects
+#### Fixed Effects
 
 | Variable             | Estimate   | Std. Error | Significance |
 |----------------------|------------|------------|---------------|
@@ -343,7 +343,7 @@ Each model includes:
 | Size 4               | −0.485     | 0.111      | ***           |
 | Size 5               | −0.484     | 0.157      | **            |
 
-### Key Takeaways
+#### Key Takeaways
 
 - **Registration** has **no significant effect** on sales overall, with substantial variance across countries.
 - **Female-owned firms** show **significantly lower sales**, mirroring employment results.
@@ -352,7 +352,7 @@ Each model includes:
 
 ---
 
-## Summary Table
+### Summary Table
 
 | Outcome     | Effect of Registration | Significant? | Random Slope Variance |
 |-------------|------------------------|--------------|------------------------|
@@ -361,14 +361,14 @@ Each model includes:
 
 ---
 
-## Final Notes
+### Final Notes
 
 - **Negative correlation** between the intercept and registration slopes in both models (−0.97 for employment, −0.45 for sales) suggests that countries with higher baseline outcomes may experience **smaller (or negative) returns from formalization**.
 - These models highlight the **importance of accounting for country-level heterogeneity** when analyzing the effects of registration.
 
 ---
 
-# Country-Specific Effects of Registration (HLM Estimates)
+## Country-Specific Effects of Registration (HLM Estimates)
 
 To further explore how the **impact of registration** varies across countries, we extract and visualize the **random slope estimates** for the `registered` variable from the multilevel models (HLMs). This gives us the **total effect of registration by country** (fixed effect + country-specific random effect).
 
@@ -376,7 +376,7 @@ Confidence intervals are constructed using ±0.1 for employment and ±0.2 for sa
 
 ---
 
-## Plot 1: Estimated Effect of Registration on Employment by Country (HLM)
+### Plot 1: Estimated Effect of Registration on Employment by Country (HLM)
 ![Rplot07](https://github.com/user-attachments/assets/dab176e0-5b46-4858-9194-b1091004af43)
 
 ### Key Takeaways
@@ -402,7 +402,7 @@ This indicates that **formalization does not consistently benefit sales**, and i
 
 ---
 
-## Key Insight
+### Key Insight
 
 The **heterogeneous effects** of registration across countries underscore the **context-specific nature** of formalization outcomes. Structural conditions, institutional environments, and enforcement practices likely shape how formalization affects firm performance.
 
