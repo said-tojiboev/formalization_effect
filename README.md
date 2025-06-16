@@ -59,7 +59,7 @@ After preparing the data, we summarize the key variables:
 
 ---
 
-## Sample Composition and Visualization
+## Sample Composition and Visualization.
 
 After summarizing firm characteristics, we explored how the sample is distributed across countries and by firm registration status (formal vs. informal).
 
