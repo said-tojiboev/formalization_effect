@@ -154,7 +154,7 @@ The effects of registration on employment and sales are plotted across firm ages
 
 ---
 
-## 8a. Overall Matching Effects (Full Sample)
+## Overall Matching Effects (Full Sample)
 
 To estimate the **average treatment effect of registration** across all countries in the sample, we use **Genetic Matching (GenMatch)** with the following covariates:
 
