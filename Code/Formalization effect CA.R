@@ -120,6 +120,8 @@ model_lpm <- lm(
 lpm_results <- broom::tidy(model_lpm, conf.int = TRUE) %>%
   filter(term != "(Intercept)")
 
+print(lpm_results)
+
 ggplot(lpm_results, aes(x = estimate, y = reorder(term, estimate))) +
   geom_point(size = 3) +
   geom_errorbarh(aes(xmin = conf.low, xmax = conf.high), height = 0.2) +
