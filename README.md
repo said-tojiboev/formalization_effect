@@ -83,7 +83,7 @@ After summarizing firm characteristics, we explored how the sample is distribute
 ### Key Observations
 
 - **Formal firms** are more concentrated in Kazakhstan and Uzbekistan, indicated by darker green regions.
-- **Informal firms** are fewer and more spread out, with some concentration in **Uzbekistan** and **Turkmenistan**.
+- **Informal firms** are fewer and more spread out, with some concentration in **Tajikistan** and **Turkmenistan**.
 - Countries with fewer informal firms (e.g., **Tajikistan**) may lead to **less precise estimates** when comparing registered vs. unregistered firms.
 
 ---
@@ -97,12 +97,16 @@ We estimate a **Linear Probability Model (LPM)** to examine which firm character
 
 ### Covariates Included
 
-- **female_owner**: Dummy for whether the firm is female-owned  
-- **firm_age**: Age of the firm in years  
-- **init_size**: Log of number of employees at founding  
-- **manager_experience**: Years of top manager's experience  
-- **size**: Categorical firm size (with 5 levels)  
-- **country**: Country fixed effects (Uzbekistan as reference)
+- `female_owner`: Dummy for whether the firm is female-owned  
+- `firm_age`: Age of the firm in years  
+- `init_size`: Log of number of employees at founding  
+- `manager_experience`: Years of top manager’s experience  
+- `size`: Categorical firm size based on locality population:
+  - `size2`: City with population over 1 million (**reference category**)  
+  - `size3`: City with population between 250,000 and 1 million  
+  - `size4`: Town with population between 50,000 and 250,000  
+  - `size5`: Locality with population less than 50,000  
+- `country`: Country fixed effects (Uzbekistan as reference)
 
 ### Result Visualization
 
