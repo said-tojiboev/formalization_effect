@@ -116,13 +116,7 @@ Visual results are presented with confidence intervals (horizontal bars). If the
 
 ### Key Observations
 
-- **Initial firm size** is positively associated with the likelihood of registration. Firms that start larger are more likely to be formalized.
-- **Firm age** has a **small but statistically significant negative effect**, indicating that older firms are slightly less likely to be registered at founding.
-- The coefficient on **female ownership** is positive but **statistically insignificant**, suggesting no strong evidence that gender predicts registration in this context.
-- **Manager experience** has a small, **negative but statistically significant** effect, though the magnitude is minimal.
-- **Country effects vary**:
-  - Firms in **Kazakhstan** and **Tajikistan** are significantly more likely to be registered than in **Uzbekistan**.
-  - Firms in **Kyrgyzstan** and **Turkmenistan** do not differ significantly from **Uzbekistan**.
+The only significant predictor of being formal at founding is firm age, and interestingly, the relationship is negative — suggesting older firms in your data were less likely to have registered from the start. This could reflect that informal firms survive and age, or that new firms are more likely to register upfront due to regulatory changes or incentives.
 
 ---
 
