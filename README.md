@@ -126,9 +126,25 @@ This figure investigates the possibility of differential survival bias in estima
 
 To explore this, we estimate the effect of registration on firm outcomes (ln employment and ln sales) separately for each firm age, from 1 to 20 years. This approach allows us to observe how the impact of formalization evolves over the firm lifecycle and to detect potential survival-driven biases.
 
+
+
 ### Visualization
 
 The effects of registration on employment and sales are plotted across firm ages with corresponding 95% confidence intervals.
+Each point shows the **average difference in log sales or log employment** between:
+
+🔹 **Firms that were registered at founding (formal)**  
+vs.  
+🔸 **Firms that were not registered at founding (informal)**  
+
+**among firms that are the same age** (e.g., all 3-year-old firms).
+
+> **"At this firm age, how much better (or worse) are formal firms performing compared to informal ones, on average?"**
+
+- If a point is **above zero**, formal firms perform **better** on that outcome.
+- If a point is **below zero**, informal firms perform **better** on that outcome.
+- If the **confidence interval includes zero**, the difference is **not statistically significant**.
+
 ![Rplot04](https://github.com/user-attachments/assets/04be9fb6-a131-4652-8b85-99f2addd53dd)
 
 
