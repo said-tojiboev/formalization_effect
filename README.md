@@ -275,11 +275,10 @@ We estimate four OLS models to assess how firm registration at the time of found
 
 ### Key Takeaways
 
-- **Registration at founding** has a **significant negative effect on employment**, but **no significant effect on sales** in both basic and full models.
-- **Firm age** and **initial firm size** are strong positive predictors of both sales and employment.
-- **Female ownership** is associated with **lower sales and employment**, with statistically significant effects.
-- **Manager experience** has **no statistically significant effect** on either outcome.
-- The inclusion of additional controls (Full Models) slightly improves the explanatory power (R²), particularly for sales.
+- Registration has no benefit for sales, and may even reduce employment — consistent across both basic and full models.
+- Initial size and firm age are strong predictors of both outcomes.
+- Female ownership shows a negative association with firm performance.
+- Manager experience appears unrelated to outcomes in this sample.
 
 ---
 
