@@ -230,11 +230,17 @@ Separate models are estimated for each country, controlling for:
 
 ### Key Observations:
 
-- All countries show **negative point estimates**, but **none are statistically significant**, as all confidence intervals **cross zero**.
-- **Kazakhstan and Tajikistan** have larger negative estimates, but wide intervals reduce confidence in their precision.
-- **Uzbekistan and Turkmenistan** show smaller, less precise effects.
+- All five countries show negative point estimates, meaning that formally registered firms tend to have lower sales than comparable informal firms after matching on observable characteristics (firm age, founding size, manager experience).
+- Kazakhstan shows the largest negative effect, with formal firms having substantially lower log sales than informal firms.
+- Kyrgyzstan and Turkmenistan also show moderate negative effects, though the confidence intervals are wide, indicating high uncertainty in those estimates.
+- Uzbekistan and Tajikistan show small negative effects close to zero, with large confidence intervals — suggesting the difference is not statistically significant.
+- These results suggest that formalization may not provide sales advantages to firms in these countries — or that informal firms that survive may be particularly strong in sales performance.
 
-**Conclusion**: The **effect of registration on sales** is **inconclusive**. There is **no strong evidence** that formalization improves or reduces firm sales in any country in the sample.
+This could reflect:
+- Weak enforcement of benefits tied to formal registration.
+- Informal firms having competitive advantages (e.g., lower taxes or less regulatory burden).
+- Selection bias — only stronger informal firms may survive long enough to be observed.
+- Together with the employment results, these findings question the assumption that registration automatically leads to better firm outcomes.
 
 ---
 
