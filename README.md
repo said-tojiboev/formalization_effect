@@ -211,12 +211,12 @@ Separate models are estimated for each country, controlling for:
 
 ### Key Observations:
 
-- **Kazakhstan**: Registration has a **significant negative** effect on employment. The confidence interval does not cross zero.
-- **Uzbekistan & Kyrgyzstan**: Also show **negative effects**, though smaller in magnitude. The intervals **do cross zero**, making them **not statistically significant**.
-- **Tajikistan**: The estimate is negative but **very imprecise**, with a wide confidence interval.
-- **Turkmenistan**: The effect is near zero and **not statistically significant**.
-
-**Conclusion**: No country shows a significant positive effect of registration on employment. Kazakhstan is the only one with a statistically significant **negative effect**.
+- All countries have negative point estimates, meaning formal firms tend to employ fewer people than informal ones after matching.
+- The largest negative effect is seen in Kazakhstan, followed by Tajikistan and Uzbekistan.
+- Turkmenistan shows almost no difference, with a point estimate very close to zero.
+- None of the effects are significantly positive, suggesting no employment advantage from registration in these contexts.
+- This supports the idea that registration does not increase employment — and in some countries, it may even be associated with reduced employment.
+- The variation across countries suggests that local institutional or regulatory environments may shape how registration affects firm behavior.
 
 ---
 
