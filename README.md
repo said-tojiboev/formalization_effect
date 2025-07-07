@@ -116,20 +116,15 @@ Visual results are presented with confidence intervals (horizontal bars). If the
 
 ### Key Observations
 
-The only significant predictor of being formal at founding is firm age, and interestingly, the relationship is negative — suggesting older firms in your data were less likely to have registered from the start. This could reflect that informal firms survive and age, or that new firms are more likely to register upfront due to regulatory changes or incentives.
+The only significant predictor of being formal at founding is firm age, and interestingly, the relationship is negative — suggesting older firms in the dataset were less likely to have registered from the start. This could reflect that informal firms survive and age, or that new firms are more likely to register upfront due to regulatory changes or incentives.
 
 ---
 
 ## Effect of Registration by Firm Age
 
-To explore how the impact of formalization evolves as firms mature, we estimate **separate OLS regressions** for each firm age (1 to 20 years). This approach replicates the logic of **Figure 4 from Assenova & Sorenson (2017)**.
+This figure investigates the possibility of differential survival bias in estimating the effects of firm registration. Specifically, it addresses the concern that better-performing firms may be more likely to register at founding, and that weaker informal firms may exit early and not appear in the sample. If that’s the case, the observed performance differences between formal and informal firms might reflect selection effects rather than causal benefits of registration.
 
-### Controls Included
-
-- **Initial firm size** (`init_size`)  
-- **Manager experience**  
-- **Country fixed effects**  
-- **Firm size category**
+To explore this, we estimate the effect of registration on firm outcomes (ln employment and ln sales) separately for each firm age, from 1 to 20 years. This approach allows us to observe how the impact of formalization evolves over the firm lifecycle and to detect potential survival-driven biases.
 
 ### Visualization
 
@@ -139,16 +134,21 @@ The effects of registration on employment and sales are plotted across firm ages
 
 ### Key Observations
 
-- Younger firms (**ages 1–5**) exhibit **high variance** in the estimated effect of registration on both employment and sales.
-  - The **wide confidence intervals** reflect small sample sizes and greater heterogeneity among early-stage enterprises.
+#### 🔵 Ln Sales (Blue Line)
 
-- For firms aged **6–20**, the effects of registration on both outcomes **stabilize around zero** and fluctuate with **narrower confidence intervals**.
+- For young firms, the effect of registration on sales is mostly positive: formal firms tend to perform better in their early years.
 
-- There is **no consistently positive or negative effect** across ages, suggesting that the **benefits of formalization may be more context- or firm-specific** than age-dependent.
+- As firm age increases, the effect declines and even turns negative (around ages 10–16), suggesting that older informal firms are more competitive — likely because only the most resilient informal firms survive.
 
-- **Sales outcomes (in blue)** show slightly **more variation** than **employment (in red)**, possibly due to:
-  - Volatility in revenue reporting  
-  - Seasonal factors affecting income levels
+- This implies that younger informal firms are disadvantaged, but those that endure may catch up or even outperform formal firms in terms of sales.
+
+
+#### 🔴 Ln Employment (Red Line)
+
+- The effect is mostly flat and close to zero, with modest positive values in the early and middle years.
+
+- This suggests that registration has a limited or inconsistent effect on employment, and that gap doesn't significantly change as firms age.
+
 
 ---
 
