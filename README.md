@@ -111,7 +111,7 @@ We estimate a **Linear Probability Model (LPM)** to examine which firm character
 ### Result Visualization
 
 Visual results are presented with confidence intervals (horizontal bars). If the interval crosses the red vertical line at 0, the effect is **not statistically significant** at the 95% level.
-![Rplot03](https://github.com/user-attachments/assets/1a47b6fe-5bda-4ea5-a22f-2b84f4319821)
+![Rplot](https://github.com/user-attachments/assets/1fcbc163-be67-44a4-bec2-9b2969a58504)
 
 
 ### Key Observations
