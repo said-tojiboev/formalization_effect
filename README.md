@@ -185,8 +185,6 @@ To estimate the **average treatment effect of registration** across all countrie
 | ln_emp    | -0.249   | 0.075      | -3.30       | 0.001   | **Negative and statistically significant.** Registration is associated with a **~25% decrease in employment** (log points), suggesting that formal firms may hire fewer workers, potentially due to higher regulatory or tax-related labor costs. |
 | ln_sales  | 0.078    | 0.264      | 0.30        | 0.768   | **Positive but not statistically significant.** No strong evidence that formalization impacts sales on average across all firms. |
 
-These findings align with Assenova & Sorenson (2017), who argue that the benefits of formalization may be offset by new compliance burdens, especially for smaller firms with limited capacity to absorb the associated costs.
-
 ---
 
 ## Effect of Registration by Country (Matching Estimation)
