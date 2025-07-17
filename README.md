@@ -1,4 +1,4 @@
-# Firm Formalization and Performance in Central Asia
+# The Effect of Formalization on Firm Performance across Central Asian Countries
 
 ## Research Background
 
